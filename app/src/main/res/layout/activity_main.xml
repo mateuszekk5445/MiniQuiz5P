@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@drawable/unnamed"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz o Pływaniu"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROZPOCZNIJ QUIZ"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:minHeight="48dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_quiz_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tutaj pojawi się pytanie."
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:id="@+id/button_answer_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. Odpowiedź A"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/button_answer_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B. Odpowiedź B"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/button_answer_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C. Odpowiedź C"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wynik: 0"
+            android:textSize="22sp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESETUJ QUIZ"
+            android:visibility="gone"
+            android:minHeight="48dp" />
+    </LinearLayout>
+</LinearLayout>
